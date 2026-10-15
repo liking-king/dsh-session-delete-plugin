@@ -1,0 +1,9 @@
+# dsh-plugin-session-delete — bundle layer.
+#
+# Applied after every shipped bundle layer when this package is selected as a
+# profile bundle, so the row below adds the Host half to the running tree.
+# The browser half is served automatically from this package's \`dsh.client\`
+# declaration; no client row is needed.
+- insert:
+    - id: session-delete
+      name: 'dsh-plugin-session-delete'
